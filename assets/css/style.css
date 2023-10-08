@@ -7,3 +7,20 @@
     align-items: center;
     padding: 2rem 0;
 }
+
+.d-menu ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.d-menu ul li {
+    padding: 2rem 2rem;
+    color: var(--theme-text-dull);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.d-menu ul li:hover {
+    color: var(--theme-color);
+}
