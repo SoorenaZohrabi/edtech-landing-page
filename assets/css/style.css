@@ -289,3 +289,103 @@
     font-size: 1.6rem;
     color: var(--theme-text-long);
 }
+
+.working {
+    padding-top: 10rem;
+}
+
+.content {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content .tag-line {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--theme-text);
+}
+
+.content .main-line {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--theme-color);
+    margin-bottom: 2rem;
+}
+
+.content .description {
+    font-size: 2rem;
+    color: var(--theme-text-long);
+    margin-bottom: 5rem;
+}
+
+.demo {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "item1 image item4" "item2 image item5" "item3 image item6";
+    gap: 1rem;
+    position: relative;
+}
+
+.demo .item1 {
+    grid-area: item1;
+}
+
+.demo .item2 {
+    grid-area: item2;
+}
+
+.demo .item3 {
+    grid-area: item3;
+}
+
+.demo .image {
+    grid-area: image;
+    padding: 2rem;
+    width: 100%;
+}
+
+.demo .item4 {
+    grid-area: item4;
+}
+
+.demo .item5 {
+    grid-area: item5;
+}
+
+.demo .item6 {
+    grid-area: item6;
+}
+
+.demo .title {
+    font-size: 2.4rem;
+    color: var(--theme-color);
+    font-weight: 600;
+}
+
+.demo .description {
+    font-size: 1.8rem;
+    color: var(--theme-text-long);
+}
+
+.demo .move-right {
+    text-align: right;
+}
+
+.demo .float-bg-2 {
+    position: absolute;
+    bottom: 100px;
+    right: 5px;
+    z-index: -1;
+    animation: rotate 5s ease 0s infinite alternate;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
