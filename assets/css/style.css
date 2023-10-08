@@ -24,3 +24,48 @@
 .d-menu ul li:hover {
     color: var(--theme-color);
 }
+
+.m-menu {
+    display: none;
+    position: relative;
+}
+
+.m-menu .hamburger {
+    font-size: 3rem;
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+    color: var(--theme-text);
+}
+
+.m-menu .m-navbar {
+    position: absolute;
+    right: 9px;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--theme-section-bg);
+    padding: 3rem 3rem;
+    border-radius: 7px;
+    box-shadow: 5px 3px 2px rgb(140 152 164 / 15%);
+}
+
+.m-menu .m-navbar li {
+    padding: 1rem 2rem;
+    font-weight: 500;
+    color: var(--theme-text-dull);
+}
+
+.m-menu .m-navbar li:hover {
+    cursor: pointer;
+    color: var(--theme-color);
+    background-color: #b8dfff;
+    border-radius: 5px;
+}
+
+.m-menu .m-navbar .btn {
+    margin-top: 2rem;
+    text-align: center;
+    display: block;
+}
+
